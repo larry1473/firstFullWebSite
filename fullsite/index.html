@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul class="topNav" id="hamburgerClicked">
+            <li> <a href="#home">Home</a> </li>
+            <li> <a href="#About">About</a> </li>
+            <li> <a href="#news">news</a> </li>
+            <li> <a href="#Contact">Contact</a> </li>
+            <li class="topNav-right"> <a href="#sign in">sign in</a> </li>
+            <li class="topNav-right"> <a href="#sign up">sign up</a> </li>
+            <li class="hamburger"><a href="javascript:void(0);" onclick="dropDownMenu()">&#9776;</a></li>
+        </ul>
+        
+    </nav>
+
+    <div class="container"  id="section-1-gradient">
+        <div class="row">
+            <div class="col-6 ">
+                <div class="left_side_col">
+                    <h1 class="large"> Love programming</h1>
+                    <h1 class="large">Come code with me </h1>
+                </div>
+                <form action="">
+                    <div class="left_side_col">
+                        <h2>Username</h2>
+                        <input type="text"  name="username" placeholder="Username" class="inputBox">
+                        <h2>Password</h2>
+                        <input type="text"  name="Password" placeholder="Password" class="inputBox">
+
+                    </div>
+                </form>
+
+            </div>
+            <div class="col-6">
+                <div class="right_side_col">
+
+                    <div class="video_container">  
+                         <iframe  class= "video" width="560" height="315" src="https://www.youtube.com/embed/ccDshS7ITlk" frameborder="5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <header>
+        <h1 class="section2header"> The fundamental of  progarmming </h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+
+                    <div class="icon">
+                        <img  class="img" src="images/ps.png" alt="ps logo">
+                    </div>
+
+                    <div>
+                        <label for="">
+                            Master function or methods
+                        </label>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                             sed do eiusmod tempor incididunt ut labore et dolore."</p>
+                    
+                    </div>
+                    
+
+                    
+
+                </div>
+
+            </div>
+            <div class="col-4">
+                <div class="box">
+
+                    <div class="icon">
+                        <img  class="img" src="images/ps.png" alt="ps logo">
+                    </div>
+
+                    <div>
+                        <label for="">
+                            Turn to object oriented programming
+                        </label>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                             sed do eiusmod tempor incididunt ut labore et."</p>
+                    
+                    </div>
+                    
+
+                    
+
+                </div>
+
+            </div>
+            <div class="col-4">
+                <div class="box">
+
+                    <div class="icon">
+                        <img  class="img" src="images/ps.png" alt="ps logo">
+                    </div>
+
+                    <div>
+                        <label for="">
+                            Master how loops works
+                        </label>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore ."</p>
+                    
+                    </div>
+                    
+
+                    
+
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="learn_more"> Learn more</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-7">
+                <article>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore .
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore .
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore . 
+                    </p>
+                </article>
+    
+            </div>
+    
+            <div  class="col-5">
+
+                <div class="ps_icon">
+                    <img src="images/ps.png" alt="image">
+                </div>
+    
+            </div>
+
+
+        </div>
+        
+
+
+
+    </div>
+
+    <footer class="foot">
+
+        <div class="row">
+            <div class="col-3 mobile_stack">
+                <h1> company </h1>
+                <ul>
+                    <li>About</li>
+                    <li>logs</li>
+                    <li> careers</li>
+                </ul>
+
+            </div>
+
+            <div class="col-3 mobile_stack">
+                <h1> company </h1>
+                <ul>
+                    <li>About</li>
+                    <li>logs</li>
+                    <li> careers</li>
+                </ul>
+
+            </div>
+
+            <div class="col-3 mobile_stack">
+                <h1> company </h1>
+                <ul>
+                    <li>About</li>
+                    <li>logs</li>
+                    <li> careers</li>
+                </ul>
+
+            </div>
+
+            <div class="col-3">
+                <h1> company </h1>
+                <ul>
+                    <li>About</li>
+                    <li>logs</li>
+                    <li> careers</li>
+                </ul>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+    <script>
+
+        function dropDownMenu(){
+            var id = document.getElementById("hamburgerClicked");
+            if(id.className === "topNav"){
+                id.className += " responsive";
+            }
+            else{
+                id.className ="topNav";
+            }
+        }
+
+    </script>
+
+</body>
+</html>
